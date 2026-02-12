@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philippe — Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">P<span class="accent">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="navAbout">À propos</a></li>
+      <li><a href="#skills" data-i18n="navSkills">Compétences</a></li>
+      <li><a href="#projects" data-i18n="navProjects">Projets</a></li>
+      <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">
+        <span class="lang-label active" id="langFR">FR</span>
+        <span class="lang-separator">/</span>
+        <span class="lang-label" id="langEN">EN</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <header class="hero" id="hero">
+    <div class="container hero-content">
+      <p class="hero-greeting" data-i18n="heroGreeting">Bonjour, je suis</p>
+      <h1 class="hero-title">Philippe<span class="accent">.</span></h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">Étudiant à <strong>Epitech</strong> — à la recherche d'une alternance</p>
+      <p class="hero-description" data-i18n="heroDescription">
+        Passionné par le développement web et logiciel, je conçois des solutions modernes, performantes et élégantes.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-i18n="heroCTA">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="heroContact">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="aboutTitle">À propos de moi</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="aboutP1">
+            Je suis Philippe, étudiant en informatique à <strong>Epitech</strong>. Curieux et persévérant, je me forme chaque jour aux technologies modernes du développement web et logiciel.
+          </p>
+          <p data-i18n="aboutP2">
+            Je suis actuellement à la recherche d'une <strong>alternance</strong> qui me permettra de mettre en pratique mes compétences techniques tout en continuant à apprendre au sein d'une équipe passionnée.
+          </p>
+          <p data-i18n="aboutP3">
+            Mon objectif : contribuer à des projets ambitieux, écrire du code propre et créer des expériences utilisateur mémorables.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <span class="detail-number">2+</span>
+            <span class="detail-label" data-i18n="aboutYears">Années d'études</span>
+          </div>
+          <div class="detail-card">
+            <span class="detail-number">10+</span>
+            <span class="detail-label" data-i18n="aboutProjects">Projets réalisés</span>
+          </div>
+          <div class="detail-card">
+            <span class="detail-number">∞</span>
+            <span class="detail-label" data-i18n="aboutMotivation">Motivation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS ======== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skillsTitle">Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 data-i18n="skillFront">Front-End</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skillBack">Back-End</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3 data-i18n="skillTools">Outils &amp; Méthodes</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li data-i18n="skillAgile">Méthodes Agiles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROJECTS ======== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-i18n="projectsTitle">Projets</h2>
+      <div class="projects-grid">
+
+         <!-- Projet 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name" data-i18n="project4Name">Portfolio Personnel</h3>
+          <p class="project-desc" data-i18n="project4Desc">
+            Ce portfolio que vous consultez actuellement, conçu en HTML, CSS et JavaScript vanilla avec support bilingue.
+          </p>
+          <ul class="project-stack">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+        
+        <!-- Projet 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name" data-i18n="project1Name">Gestionnaire de Tâches CLI</h3>
+          <p class="project-desc" data-i18n="project1Desc">
+            Outil en ligne de commande pour gérer des tâches avec persistance SQLite, import/export et tests unitaires.
+          </p>
+          <ul class="project-stack">
+            <li>C</li>
+            <li>SQLite</li>
+            <li>Makefile</li>
+          </ul>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name" data-i18n="project2Name">Dashboard Météo</h3>
+          <p class="project-desc" data-i18n="project2Desc">
+            Application web affichant les prévisions météo en temps réel avec géolocalisation et graphiques interactifs.
+          </p>
+          <ul class="project-stack">
+            <li>React</li>
+            <li>API REST</li>
+            <li>Chart.js</li>
+          </ul>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name" data-i18n="project3Name">Mini Shell Unix</h3>
+          <p class="project-desc" data-i18n="project3Desc">
+            Réplique d'un shell Unix réalisée en C, gérant les pipes, redirections et les processus en arrière-plan.
+          </p>
+          <ul class="project-stack">
+            <li>C</li>
+            <li>Linux</li>
+            <li>Makefile</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
+      <p class="contact-intro" data-i18n="contactIntro">
+        N'hésitez pas à me contacter.
+      </p>
+      <div class="contact-methods">
+        <a href="mailto:philippe.belbachir-d-haenens@epitech.eu" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>philippe.belbachir-d-haenens@epitech.eu</span>
+        </a>
+        <a href="https://www.linkedin.com/in/philippe-belbachir-d%E2%80%99haenens-18aa9539a/" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-i18n="footerText">© 2026 Philippe. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Tar0sakU" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/philippe-belbachir-d%E2%80%99haenens-18aa9539a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
