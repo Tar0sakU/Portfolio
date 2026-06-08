@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Projects
     projectsTitle:   'Projects',
-    project1Name:    'CLI Task Manager',
-    project1Desc:    'Command-line tool for managing tasks with SQLite persistence, import/export and unit tests.',
-    project2Name:    'Weather Dashboard',
-    project2Desc:    'Web application displaying real-time weather forecasts with geolocation and interactive charts.',
-    project3Name:    'Mini Unix Shell',
-    project3Desc:    'Unix shell replica built in C, handling pipes, redirections and background processes.',
-    project4Name:    'Personal Portfolio',
-    project4Desc:    'This portfolio you\'re currently viewing, built with vanilla HTML, CSS and JavaScript with bilingual support.',
+    project1Name:    'Personal Portfolio',
+    project1Desc:    'This portfolio you\'re currently viewing, built with vanilla HTML, CSS and JavaScript with bilingual support.',
+    project2Name:    'Wiki Stranger Things',
+    project2Desc:    'Interactive website presenting the series Stranger Things with a modern and responsive interface.',
+    project3Name:    'In progress',
+    project3Desc:    '...',
+    project4Name:    'In progress',
+    project4Desc:    '...',
 
     // Contact
     contactTitle:    'Contact',
